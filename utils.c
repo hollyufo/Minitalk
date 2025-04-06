@@ -6,7 +6,7 @@
 /*   By: imchaibi <imchaibi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/06 22:03:17 by imchaibi          #+#    #+#             */
-/*   Updated: 2025/04/06 22:09:37 by imchaibi         ###   ########.fr       */
+/*   Updated: 2025/04/06 23:10:16 by imchaibi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ int	ft_atoi(char *str)
 	return (sign * result);
 }
 
-void	ft_putnbr_fd(int nb)
+void	ft_putnbr(int nb)
 {
 	long int	num;
 
