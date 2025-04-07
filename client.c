@@ -6,7 +6,7 @@
 /*   By: imchaibi <imchaibi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/06 20:45:37 by imchaibi          #+#    #+#             */
-/*   Updated: 2025/04/06 20:45:42 by imchaibi         ###   ########.fr       */
+/*   Updated: 2025/04/06 23:15:42 by imchaibi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,6 @@ int	main(int argc, char **argv)
 
 	while (*str)
 		send_char(pid, *str++);
-	send_char(pid, '\n'); // send newline
+	send_char(pid, '\n');
 	return (0);
 }
