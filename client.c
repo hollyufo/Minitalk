@@ -6,7 +6,7 @@
 /*   By: imchaibi <imchaibi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/06 20:45:37 by imchaibi          #+#    #+#             */
-/*   Updated: 2025/04/06 23:15:42 by imchaibi         ###   ########.fr       */
+/*   Updated: 2025/04/12 17:58:26 by imchaibi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	send_char(pid_t pid, char c)
 			kill(pid, SIGUSR2);
 		else
 			kill(pid, SIGUSR1);
-		usleep(150);
+		usleep(500);
 		i--;
 	}
 }
