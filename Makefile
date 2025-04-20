@@ -1,29 +1,21 @@
-NAME_SERVER = server
-NAME_CLIENT = client
+CC 				= cc
+FLAGS 			=	-Wall -Wextra -Werror
+ClIENT 			= client.c
+SERVER 			= server.c
+CNAME 			= client
+SNAME 			= server
+HELPER 			= utils.c
 
-CC = cc
-CFLAGS = -Wall -Wextra -Werror
+all: $(CNAME) $(SNAME)
 
-SRCS_SERVER = server.c utils.c
-SRCS_CLIENT = client.c utils.c
+$(CNAME): $(ClIENT)
+	$(CC) $(FLAGS) $(ClIENT) $(HELPER) -o $(CNAME)
 
-OBJS_SERVER = $(SRCS_SERVER:.c=.o)
-OBJS_CLIENT = $(SRCS_CLIENT:.c=.o)
-
-all: $(NAME_SERVER) $(NAME_CLIENT)
-
-$(NAME_SERVER): $(OBJS_SERVER)
-	$(CC) $(CFLAGS) -o $(NAME_SERVER) $(OBJS_SERVER)
-
-$(NAME_CLIENT): $(OBJS_CLIENT)
-	$(CC) $(CFLAGS) -o $(NAME_CLIENT) $(OBJS_CLIENT)
+$(SNAME): $(SERVER)
+	$(CC) $(FLAGS) $(SERVER) $(HELPER) -o $(SNAME)
 
 clean:
-	rm -f $(OBJS_SERVER) $(OBJS_CLIENT)
-
+	rm -f $(CNAME) $(SNAME)
 fclean: clean
-	rm -f $(NAME_SERVER) $(NAME_CLIENT)
 
 re: fclean all
-
-.PHONY: all clean fclean re

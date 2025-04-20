@@ -6,13 +6,10 @@
 /*   By: imchaibi <imchaibi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/06 22:03:17 by imchaibi          #+#    #+#             */
-/*   Updated: 2025/04/20 17:26:27 by imchaibi         ###   ########.fr       */
+/*   Updated: 2025/04/20 17:34:58 by imchaibi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minitalk.h"
-
-// ft_putchar.c
 #include "minitalk.h"
 
 void	ft_putchar(char c)
