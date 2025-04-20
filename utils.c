@@ -6,7 +6,7 @@
 /*   By: imchaibi <imchaibi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/06 22:03:17 by imchaibi          #+#    #+#             */
-/*   Updated: 2025/04/20 18:35:56 by imchaibi         ###   ########.fr       */
+/*   Updated: 2025/04/20 19:32:01 by imchaibi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,10 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-#include "minitalk.h"
-
 void	ft_putstr(char *str)
 {
 	int	i;
+
 	i = 0;
 	while (str[i] != '\0')
 	{
@@ -30,13 +29,12 @@ void	ft_putstr(char *str)
 	}
 }
 
-#include "minitalk.h"
-
 int	ft_atoi(char *str)
 {
 	int	result;
 	int	sign;
 	int	i;
+
 	result = 0;
 	sign = 1;
 	i = 0;
@@ -57,11 +55,10 @@ int	ft_atoi(char *str)
 	return (sign * result);
 }
 
-#include "minitalk.h"
-
 void	ft_putnbr(int nb)
 {
 	long int	num;
+
 	num = nb;
 	if (num < 0)
 	{
