@@ -6,7 +6,7 @@
 /*   By: imchaibi <imchaibi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/06 20:45:37 by imchaibi          #+#    #+#             */
-/*   Updated: 2025/04/20 18:28:11 by imchaibi         ###   ########.fr       */
+/*   Updated: 2025/04/20 18:36:39 by imchaibi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int	argument_checker(int argc, char **argv)
 	}
 	if (ft_atoi(argv[1]) <= 0)
 	{
-		ft_putstr("Error: Wrong PID\n");
+		ft_putstr("Error: Wrong PID try again!!!!\n");
 		return (0);
 	}
 	return (1);

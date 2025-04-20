@@ -6,7 +6,7 @@
 /*   By: imchaibi <imchaibi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/06 20:45:13 by imchaibi          #+#    #+#             */
-/*   Updated: 2025/04/20 18:33:15 by imchaibi         ###   ########.fr       */
+/*   Updated: 2025/04/20 18:35:46 by imchaibi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,10 +44,10 @@ int	main(int argc, char **argv)
 	(void)**argv;
 	if (argc != 1)
 	{
-		ft_putstr("Error: INVALID number of arguments\n");
+		ft_putstr("Error: INVALID number of arguments try again\n");
 		return (0);
 	}
-	ft_putstr("server PID: ");
+	ft_putstr("server PID is : ");
 	ft_putnbr(getpid());
 	write(1, "\n", 1);
 	signal(SIGUSR1, handle_signal);
